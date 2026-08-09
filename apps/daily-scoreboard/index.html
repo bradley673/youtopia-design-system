@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+  <title>Daily Scoreboard</title>
+  <meta name="description" content="Track daily calories, protein and water against your targets." />
+  <meta name="theme-color" content="#0a0d10" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Scoreboard" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app" aria-live="polite">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true"><i class="m m-clay"></i><i class="m m-chart"></i><i class="m m-sky"></i></span>
+        <h1>Daily <span>Scoreboard</span></h1>
+      </div>
+      <div class="topbar-date" id="topbarDate"></div>
+    </header>
+
+    <main id="view" class="view"></main>
+
+    <nav class="tabbar" role="tablist" aria-label="Sections">
+      <button class="tab" role="tab" data-tab="today" aria-selected="true">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13h6v7H4zM4 4h6v7H4zm10 0h6v10h-6zm0 12h6v4h-6z"/></svg>
+        Today
+      </button>
+      <button class="tab" role="tab" data-tab="history" aria-selected="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19h3V9H4zm6.5 0h3V4h-3zm6.5 0h3v-7h-3z"/></svg>
+        History
+      </button>
+      <button class="tab" role="tab" data-tab="settings" aria-selected="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm8.9 4a7 7 0 0 0-.1-1.2l2-1.6-2-3.4-2.4 1a7.3 7.3 0 0 0-2-1.2L16 3h-4l-.4 2.6a7.3 7.3 0 0 0-2 1.2l-2.4-1-2 3.4 2 1.6a7 7 0 0 0 0 2.4l-2 1.6 2 3.4 2.4-1a7.3 7.3 0 0 0 2 1.2L12 21h4l.4-2.6a7.3 7.3 0 0 0 2-1.2l2.4 1 2-3.4-2-1.6c.07-.4.1-.8.1-1.2z"/></svg>
+        Settings
+      </button>
+    </nav>
+  </div>
+
+  <div id="toast" class="toast" hidden>
+    <span id="toastMsg"></span>
+    <button id="toastUndo" hidden>Undo</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

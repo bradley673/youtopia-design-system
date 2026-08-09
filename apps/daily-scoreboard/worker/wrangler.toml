@@ -1,0 +1,12 @@
+name = "daily-scoreboard-push"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+
+# Check the reminder rules every 20 minutes
+[triggers]
+crons = ["*/20 * * * *"]
+
+# Run `npx wrangler kv namespace create DATA` and paste the generated id below
+[[kv_namespaces]]
+binding = "DATA"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
