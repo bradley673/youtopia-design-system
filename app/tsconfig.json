@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "paths": {
+      "@youtopia/design-system": ["../src/index.ts"],
+      "react": ["./node_modules/@types/react"],
+      "react/jsx-runtime": ["./node_modules/@types/react/jsx-runtime"],
+      "react-dom": ["./node_modules/@types/react-dom"],
+      "react-dom/client": ["./node_modules/@types/react-dom/client"]
+    }
+  },
+  "include": ["src", "../src"],
+  "exclude": ["../src/examples"]
+}

@@ -1,0 +1,6 @@
+node_modules/
+dist/
+# Real practice data must never be committed — this repo is public.
+# Generate it locally with `npm run data` and keep it out of git.
+practice-data.real.json
+aliases.json

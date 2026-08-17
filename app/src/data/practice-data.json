@@ -1,0 +1,677 @@
+{
+ "generatedAt": "2026-08-17",
+ "scheduleYear": 2026,
+ "taxYear": "2025/26",
+ "clients": [
+  {
+   "id": "1",
+   "name": "Acme Widgets Ltd",
+   "type": "Limited company",
+   "manager": "Sam",
+   "partner": "Robin",
+   "email": "hello@acmewidgetsltd.example.com",
+   "coRegNo": "10000111",
+   "vatNo": "",
+   "yearEnd": "03-31",
+   "confStmtDue": "2026-02-14",
+   "incomeSources": "",
+   "risk": "Completed",
+   "contacts": [
+    {
+     "firstName": "Charlie",
+     "lastName": "Example",
+     "email": "charlie@acmewidgetsltd.example.com",
+     "phone": "07700 900100",
+     "primary": true,
+     "jobTitle": "Director",
+     "aml": "",
+     "amlDate": "",
+     "onboarding": "Request Sent"
+    },
+    {
+     "firstName": "Dana",
+     "lastName": "Example",
+     "email": "dana@acmewidgetsltd.example.com",
+     "phone": "07700 900101",
+     "primary": false,
+     "jobTitle": "Company Secretary",
+     "aml": "",
+     "amlDate": "",
+     "onboarding": "Request Sent"
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "name": "Borealis Consulting Ltd",
+   "type": "Limited company",
+   "manager": "Priya",
+   "partner": "Morgan",
+   "email": "hello@borealisconsultingltd.example.com",
+   "coRegNo": "10000222",
+   "vatNo": "",
+   "yearEnd": "12-31",
+   "confStmtDue": "2026-03-14",
+   "incomeSources": "",
+   "risk": "Completed",
+   "contacts": [
+    {
+     "firstName": "Dana",
+     "lastName": "Example",
+     "email": "dana@borealisconsultingltd.example.com",
+     "phone": "07700 900107",
+     "primary": true,
+     "jobTitle": "Director",
+     "aml": "Pass",
+     "amlDate": "2024-07-01",
+     "onboarding": "AML Check Complete"
+    },
+    {
+     "firstName": "Eli",
+     "lastName": "Example",
+     "email": "eli@borealisconsultingltd.example.com",
+     "phone": "07700 900108",
+     "primary": false,
+     "jobTitle": "Company Secretary",
+     "aml": "Pass",
+     "amlDate": "2024-07-01",
+     "onboarding": "AML Check Complete"
+    }
+   ]
+  },
+  {
+   "id": "3",
+   "name": "Cactus Creative Ltd",
+   "type": "Limited company",
+   "manager": "Jordan",
+   "partner": "Robin",
+   "email": "hello@cactuscreativeltd.example.com",
+   "coRegNo": "10000333",
+   "vatNo": "400000021",
+   "yearEnd": "06-30",
+   "confStmtDue": "2026-04-14",
+   "incomeSources": "",
+   "risk": "Completed",
+   "contacts": [
+    {
+     "firstName": "Eli",
+     "lastName": "Example",
+     "email": "eli@cactuscreativeltd.example.com",
+     "phone": "07700 900114",
+     "primary": true,
+     "jobTitle": "Director",
+     "aml": "Pass",
+     "amlDate": "2024-07-01",
+     "onboarding": "AML Check Complete"
+    },
+    {
+     "firstName": "Fran",
+     "lastName": "Example",
+     "email": "fran@cactuscreativeltd.example.com",
+     "phone": "07700 900115",
+     "primary": false,
+     "jobTitle": "Company Secretary",
+     "aml": "Pass",
+     "amlDate": "2024-07-01",
+     "onboarding": "AML Check Complete"
+    }
+   ]
+  },
+  {
+   "id": "4",
+   "name": "Dunmore Roofing Ltd",
+   "type": "Limited company",
+   "manager": "Alex",
+   "partner": "Morgan",
+   "email": "hello@dunmoreroofingltd.example.com",
+   "coRegNo": "10000444",
+   "vatNo": "",
+   "yearEnd": "09-30",
+   "confStmtDue": "2026-05-14",
+   "incomeSources": "",
+   "risk": "",
+   "contacts": [
+    {
+     "firstName": "Fran",
+     "lastName": "Example",
+     "email": "fran@dunmoreroofingltd.example.com",
+     "phone": "07700 900121",
+     "primary": true,
+     "jobTitle": "Director",
+     "aml": "",
+     "amlDate": "",
+     "onboarding": "Request Sent"
+    },
+    {
+     "firstName": "Georgie",
+     "lastName": "Example",
+     "email": "georgie@dunmoreroofingltd.example.com",
+     "phone": "07700 900122",
+     "primary": false,
+     "jobTitle": "Company Secretary",
+     "aml": "",
+     "amlDate": "",
+     "onboarding": "Request Sent"
+    }
+   ]
+  },
+  {
+   "id": "5",
+   "name": "Elm & Oak Landscapes Ltd",
+   "type": "Limited company",
+   "manager": "Sam",
+   "partner": "Robin",
+   "email": "hello@elmoaklandscapesltd.example.com",
+   "coRegNo": "10000555",
+   "vatNo": "",
+   "yearEnd": "03-31",
+   "confStmtDue": "2026-06-14",
+   "incomeSources": "",
+   "risk": "Completed",
+   "contacts": [
+    {
+     "firstName": "Georgie",
+     "lastName": "Example",
+     "email": "georgie@elmoaklandscapesltd.example.com",
+     "phone": "07700 900128",
+     "primary": true,
+     "jobTitle": "Director",
+     "aml": "Pass",
+     "amlDate": "2024-07-01",
+     "onboarding": "AML Check Complete"
+    },
+    {
+     "firstName": "Harper",
+     "lastName": "Example",
+     "email": "harper@elmoaklandscapesltd.example.com",
+     "phone": "07700 900129",
+     "primary": false,
+     "jobTitle": "Company Secretary",
+     "aml": "Pass",
+     "amlDate": "2024-07-01",
+     "onboarding": "AML Check Complete"
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "name": "Foxglove Dental Ltd",
+   "type": "Limited company",
+   "manager": "Priya",
+   "partner": "Morgan",
+   "email": "hello@foxglovedentalltd.example.com",
+   "coRegNo": "10000666",
+   "vatNo": "400000042",
+   "yearEnd": "01-31",
+   "confStmtDue": "2026-07-14",
+   "incomeSources": "",
+   "risk": "Completed",
+   "contacts": [
+    {
+     "firstName": "Harper",
+     "lastName": "Example",
+     "email": "harper@foxglovedentalltd.example.com",
+     "phone": "07700 900135",
+     "primary": true,
+     "jobTitle": "Director",
+     "aml": "Pass",
+     "amlDate": "2024-07-01",
+     "onboarding": "AML Check Complete"
+    },
+    {
+     "firstName": "Charlie",
+     "lastName": "Example",
+     "email": "charlie@foxglovedentalltd.example.com",
+     "phone": "07700 900136",
+     "primary": false,
+     "jobTitle": "Company Secretary",
+     "aml": "Pass",
+     "amlDate": "2024-07-01",
+     "onboarding": "AML Check Complete"
+    }
+   ]
+  },
+  {
+   "id": "7",
+   "name": "Granite Property Group Ltd",
+   "type": "Limited company",
+   "manager": "Jordan",
+   "partner": "Robin",
+   "email": "hello@granitepropertygroupltd.example.com",
+   "coRegNo": "10000777",
+   "vatNo": "",
+   "yearEnd": "11-30",
+   "confStmtDue": "2026-08-14",
+   "incomeSources": "",
+   "risk": "Completed",
+   "contacts": [
+    {
+     "firstName": "Charlie",
+     "lastName": "Example",
+     "email": "charlie@granitepropertygroupltd.example.com",
+     "phone": "07700 900142",
+     "primary": true,
+     "jobTitle": "Director",
+     "aml": "",
+     "amlDate": "",
+     "onboarding": "Request Sent"
+    },
+    {
+     "firstName": "Dana",
+     "lastName": "Example",
+     "email": "dana@granitepropertygroupltd.example.com",
+     "phone": "07700 900143",
+     "primary": false,
+     "jobTitle": "Company Secretary",
+     "aml": "",
+     "amlDate": "",
+     "onboarding": "Request Sent"
+    }
+   ]
+  },
+  {
+   "id": "8",
+   "name": "Harbourlight Media Ltd",
+   "type": "Limited company",
+   "manager": "Alex",
+   "partner": "Morgan",
+   "email": "hello@harbourlightmedialtd.example.com",
+   "coRegNo": "10000888",
+   "vatNo": "",
+   "yearEnd": "05-31",
+   "confStmtDue": "2026-09-14",
+   "incomeSources": "",
+   "risk": "",
+   "contacts": [
+    {
+     "firstName": "Dana",
+     "lastName": "Example",
+     "email": "dana@harbourlightmedialtd.example.com",
+     "phone": "07700 900149",
+     "primary": true,
+     "jobTitle": "Director",
+     "aml": "Pass",
+     "amlDate": "2024-07-01",
+     "onboarding": "AML Check Complete"
+    },
+    {
+     "firstName": "Eli",
+     "lastName": "Example",
+     "email": "eli@harbourlightmedialtd.example.com",
+     "phone": "07700 900150",
+     "primary": false,
+     "jobTitle": "Company Secretary",
+     "aml": "Pass",
+     "amlDate": "2024-07-01",
+     "onboarding": "AML Check Complete"
+    }
+   ]
+  },
+  {
+   "id": "9",
+   "name": "Jane Doe",
+   "type": "Individual",
+   "manager": "Sam",
+   "partner": "",
+   "email": "hello@janedoe.example.com",
+   "coRegNo": "",
+   "vatNo": "",
+   "yearEnd": "04-05",
+   "confStmtDue": "",
+   "incomeSources": "Employment, Dividends",
+   "risk": "Completed",
+   "contacts": [
+    {
+     "firstName": "Eli",
+     "lastName": "Doe",
+     "email": "eli@janedoe.example.com",
+     "phone": "07700 900156",
+     "primary": true,
+     "jobTitle": "Director",
+     "aml": "Pass",
+     "amlDate": "2024-07-01",
+     "onboarding": "AML Check Complete"
+    }
+   ]
+  },
+  {
+   "id": "10",
+   "name": "John Smith",
+   "type": "Individual",
+   "manager": "Priya",
+   "partner": "",
+   "email": "hello@johnsmith.example.com",
+   "coRegNo": "",
+   "vatNo": "",
+   "yearEnd": "04-05",
+   "confStmtDue": "",
+   "incomeSources": "Employment, Dividends",
+   "risk": "Completed",
+   "contacts": [
+    {
+     "firstName": "Fran",
+     "lastName": "Smith",
+     "email": "fran@johnsmith.example.com",
+     "phone": "07700 900163",
+     "primary": true,
+     "jobTitle": "Director",
+     "aml": "",
+     "amlDate": "",
+     "onboarding": "Request Sent"
+    }
+   ]
+  },
+  {
+   "id": "11",
+   "name": "Rosa Martinez",
+   "type": "Individual",
+   "manager": "Jordan",
+   "partner": "",
+   "email": "hello@rosamartinez.example.com",
+   "coRegNo": "",
+   "vatNo": "",
+   "yearEnd": "04-05",
+   "confStmtDue": "",
+   "incomeSources": "Employment, Dividends",
+   "risk": "Completed",
+   "contacts": [
+    {
+     "firstName": "Georgie",
+     "lastName": "Martinez",
+     "email": "georgie@rosamartinez.example.com",
+     "phone": "07700 900170",
+     "primary": true,
+     "jobTitle": "Director",
+     "aml": "Pass",
+     "amlDate": "2024-07-01",
+     "onboarding": "AML Check Complete"
+    }
+   ]
+  },
+  {
+   "id": "12",
+   "name": "Sandy Shore Surf School",
+   "type": "Self-employed",
+   "manager": "Alex",
+   "partner": "",
+   "email": "hello@sandyshoresurfschool.example.com",
+   "coRegNo": "",
+   "vatNo": "",
+   "yearEnd": "04-05",
+   "confStmtDue": "",
+   "incomeSources": "",
+   "risk": "",
+   "contacts": [
+    {
+     "firstName": "Harper",
+     "lastName": "Example",
+     "email": "harper@sandyshoresurfschool.example.com",
+     "phone": "07700 900177",
+     "primary": true,
+     "jobTitle": "Director",
+     "aml": "Pass",
+     "amlDate": "2024-07-01",
+     "onboarding": "AML Check Complete"
+    }
+   ]
+  }
+ ],
+ "accountsJobs": [
+  {
+   "client": "Acme Widgets",
+   "clientId": "1",
+   "yearEnd": "2026-03-31",
+   "deadline": "2026-12-31",
+   "sentToPreparer": null,
+   "inDraft": null,
+   "stage": "Not Started",
+   "manager": "Sam",
+   "partner": "Robin",
+   "notes": "",
+   "filedDate": null
+  },
+  {
+   "client": "Borealis Consulting",
+   "clientId": "2",
+   "yearEnd": "2026-12-31",
+   "deadline": "2027-10-01",
+   "sentToPreparer": "2026-05-10",
+   "inDraft": null,
+   "stage": "In Progress",
+   "manager": "Priya",
+   "partner": "Morgan",
+   "notes": "",
+   "filedDate": null
+  },
+  {
+   "client": "Cactus Creative",
+   "clientId": "3",
+   "yearEnd": "2026-06-30",
+   "deadline": "2027-03-30",
+   "sentToPreparer": "2026-05-10",
+   "inDraft": "2026-06-12",
+   "stage": "Queries",
+   "manager": "Jordan",
+   "partner": "Robin",
+   "notes": "Waiting for bank statements",
+   "filedDate": null
+  },
+  {
+   "client": "Dunmore Roofing",
+   "clientId": "4",
+   "yearEnd": "2026-09-30",
+   "deadline": "2027-06-30",
+   "sentToPreparer": "2026-05-10",
+   "inDraft": "2026-06-12",
+   "stage": "Manager Review",
+   "manager": "Alex",
+   "partner": "Morgan",
+   "notes": "",
+   "filedDate": null
+  },
+  {
+   "client": "Elm & Oak Landscapes",
+   "clientId": "5",
+   "yearEnd": "2026-03-31",
+   "deadline": "2026-12-31",
+   "sentToPreparer": "2026-05-10",
+   "inDraft": "2026-06-12",
+   "stage": "Partner Review",
+   "manager": "Sam",
+   "partner": "Robin",
+   "notes": "",
+   "filedDate": null
+  },
+  {
+   "client": "Foxglove Dental",
+   "clientId": "6",
+   "yearEnd": "2026-01-31",
+   "deadline": "2026-10-31",
+   "sentToPreparer": "2026-05-10",
+   "inDraft": "2026-06-12",
+   "stage": "Waiting for Signature",
+   "manager": "Priya",
+   "partner": "Morgan",
+   "notes": "Chased 12/08/26",
+   "filedDate": null
+  },
+  {
+   "client": "Granite Property Group",
+   "clientId": "7",
+   "yearEnd": "2026-11-30",
+   "deadline": "2027-08-30",
+   "sentToPreparer": "2026-05-10",
+   "inDraft": "2026-06-12",
+   "stage": "Filed",
+   "manager": "Jordan",
+   "partner": "Robin",
+   "notes": "",
+   "filedDate": "2026-07-01"
+  },
+  {
+   "client": "Harbourlight Media",
+   "clientId": "8",
+   "yearEnd": "2026-05-31",
+   "deadline": "2027-03-03",
+   "sentToPreparer": "2026-05-10",
+   "inDraft": "2026-06-12",
+   "stage": "Filed",
+   "manager": "Alex",
+   "partner": "Morgan",
+   "notes": "",
+   "filedDate": "2026-07-01"
+  }
+ ],
+ "personalTaxJobs": [
+  {
+   "client": "Jane Doe",
+   "clientId": "9",
+   "company": "",
+   "owner": "Sam",
+   "p11d": "",
+   "status": "No info yet",
+   "invoice": true,
+   "notes": "Chased 13/08/26",
+   "filedDate": null
+  },
+  {
+   "client": "John Smith",
+   "clientId": "10",
+   "company": "",
+   "owner": "Priya",
+   "p11d": "",
+   "status": "Partial info received",
+   "invoice": false,
+   "notes": "",
+   "filedDate": null
+  },
+  {
+   "client": "Rosa Martinez",
+   "clientId": "11",
+   "company": "",
+   "owner": "Jordan",
+   "p11d": "",
+   "status": "All info received",
+   "invoice": false,
+   "notes": "",
+   "filedDate": null
+  },
+  {
+   "client": "Sandy Shore Surf School",
+   "clientId": "12",
+   "company": "",
+   "owner": "Alex",
+   "p11d": "",
+   "status": "Ready for review",
+   "invoice": true,
+   "notes": "",
+   "filedDate": null
+  },
+  {
+   "client": "Charlie Example",
+   "clientId": null,
+   "company": "Acme Widgets Ltd",
+   "owner": "Sam",
+   "p11d": "",
+   "status": "Waiting for signature",
+   "invoice": false,
+   "notes": "",
+   "filedDate": null
+  },
+  {
+   "client": "Dana Example",
+   "clientId": null,
+   "company": "Borealis Consulting Ltd",
+   "owner": "Priya",
+   "p11d": "",
+   "status": "Filed",
+   "invoice": false,
+   "notes": "",
+   "filedDate": "2026-06-20"
+  },
+  {
+   "client": "Eli Example",
+   "clientId": null,
+   "company": "Cactus Creative Ltd",
+   "owner": "Jordan",
+   "p11d": "",
+   "status": "Filed",
+   "invoice": true,
+   "notes": "",
+   "filedDate": "2026-06-20"
+  },
+  {
+   "client": "Fran Example",
+   "clientId": null,
+   "company": "Dunmore Roofing Ltd",
+   "owner": "Alex",
+   "p11d": "",
+   "status": "Not Doing",
+   "invoice": false,
+   "notes": "",
+   "filedDate": null
+  }
+ ],
+ "p11dRows": [
+  {
+   "person": "Charlie Example",
+   "company": "Acme Widgets",
+   "manager": "Sam",
+   "taxYear": "2025/26",
+   "benefit": "Private medical",
+   "value": 1200,
+   "class1aNI": 180,
+   "notes": "",
+   "dateFiled": null,
+   "status": "Sent to Client"
+  },
+  {
+   "person": "Dana Example",
+   "company": "Borealis Consulting",
+   "manager": "Priya",
+   "taxYear": "2025/26",
+   "benefit": "Car",
+   "value": 1540,
+   "class1aNI": 231,
+   "notes": "",
+   "dateFiled": "2026-05-20",
+   "status": "Filed"
+  },
+  {
+   "person": "Eli Example",
+   "company": "Cactus Creative",
+   "manager": "Jordan",
+   "taxYear": "2025/26",
+   "benefit": "Private medical",
+   "value": 1880,
+   "class1aNI": 282,
+   "notes": "",
+   "dateFiled": "2026-05-20",
+   "status": "Filed"
+  },
+  {
+   "person": "Fran Example",
+   "company": "Dunmore Roofing",
+   "manager": "Alex",
+   "taxYear": "2025/26",
+   "benefit": "Car",
+   "value": 2220,
+   "class1aNI": 333,
+   "notes": "",
+   "dateFiled": null,
+   "status": "Sent to Client"
+  },
+  {
+   "person": "Georgie Example",
+   "company": "Elm & Oak Landscapes",
+   "manager": "Sam",
+   "taxYear": "2025/26",
+   "benefit": "Private medical",
+   "value": 2560,
+   "class1aNI": 384,
+   "notes": "",
+   "dateFiled": "2026-05-20",
+   "status": "Filed"
+  }
+ ]
+}
