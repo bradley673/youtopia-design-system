@@ -1,9 +1,10 @@
 import React from "react";
-import { Badge, Banner, Card, DataTable, Progress, StatCard, type Column } from "@youtopia/design-system";
+import { Badge, Banner, Button, Card, DataTable, Progress, StatCard, type Column } from "@youtopia/design-system";
 import {
   data, daysUntil, deadlineLabel, deadlineTone, fmtDate, isOpenPt, isOpenStage, stageTone,
   type AccountsJob,
 } from "../lib/data";
+import { issueCount, upcomingConfStmts } from "../lib/issues";
 
 interface Props {
   openClient: (id: string | null) => void;
@@ -39,6 +40,9 @@ export function Dashboard({ openClient, goTo }: Props) {
     .map((m) => ({ manager: m, count: open.filter((j) => j.manager === m).length }))
     .sort((a, b) => b.count - a.count);
   const maxManager = Math.max(...managerCounts.map((m) => m.count), 1);
+
+  const confStmts = upcomingConfStmts(60);
+  const issues = issueCount();
 
   const upcoming = [...open]
     .filter((j) => j.deadline)
@@ -127,6 +131,40 @@ export function Dashboard({ openClient, goTo }: Props) {
               </div>
             ))}
           </Card>
+
+          <Card>
+            <h2 className="card-title">Confirmation statements — next 60 days</h2>
+            {confStmts.length === 0 ? (
+              <p className="view-sub" style={{ margin: 0 }}>Nothing due in the next two months.</p>
+            ) : (
+              confStmts.map((x, i) => (
+                <div key={i} className="contact-row">
+                  <div className="contact-meta">
+                    <div className="contact-name">
+                      <button type="button" className="link-btn" onClick={() => openClient(x.client.id)}>
+                        {x.client.name}
+                      </button>
+                    </div>
+                    <div className="contact-sub">Due {fmtDate(x.client.confStmtDue)} · manager {x.client.manager || "—"}</div>
+                  </div>
+                  <Badge tone={deadlineTone(x.days)}>{deadlineLabel(x.days)}</Badge>
+                </div>
+              ))
+            )}
+          </Card>
+
+          {issues > 0 && (
+            <Card>
+              <h2 className="card-title">Data issues</h2>
+              <p className="view-sub" style={{ marginTop: 0 }}>
+                {issues} thing{issues === 1 ? "" : "s"} in the sheet or Pixie look{issues === 1 ? "s" : ""} wrong —
+                suspect deadlines, missing filing dates, unmatched names or stale statutory dates.
+              </p>
+              <Button variant="outline" size="sm" onClick={() => goTo("housekeeping")}>
+                Open housekeeping
+              </Button>
+            </Card>
+          )}
 
           <Card>
             <h2 className="card-title">Season progress</h2>

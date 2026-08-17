@@ -41,7 +41,7 @@ export function Clients({ openClient }: Props) {
 
   const columns: Column<Client>[] = [
     {
-      key: "name", header: "Client",
+      key: "name", header: "Client", sortable: true,
       render: (r) => (
         <span style={{ display: "flex", alignItems: "center", gap: 10 }}>
           <Avatar name={r.name} />
@@ -49,11 +49,11 @@ export function Clients({ openClient }: Props) {
         </span>
       ),
     },
-    { key: "type", header: "Type" },
-    { key: "manager", header: "Manager", render: (r) => r.manager || <span style={{ color: "var(--text-subtle)" }}>—</span> },
-    { key: "yearEnd", header: "Year end", render: (r) => fmtYearEnd(r.yearEnd) },
+    { key: "type", header: "Type", sortable: true },
+    { key: "manager", header: "Manager", sortable: true, render: (r) => r.manager || <span style={{ color: "var(--text-subtle)" }}>—</span> },
+    { key: "yearEnd", header: "Year end", sortable: true, render: (r) => fmtYearEnd(r.yearEnd) },
     {
-      key: "confStmtDue", header: "Conf. stmt due",
+      key: "confStmtDue", header: "Conf. stmt due", sortable: true,
       render: (r) => (r.confStmtDue ? fmtDate(r.confStmtDue) : <span style={{ color: "var(--text-subtle)" }}>—</span>),
     },
     {

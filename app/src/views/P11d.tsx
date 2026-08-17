@@ -27,23 +27,23 @@ export function P11d() {
     .sort((a, b) => a.company.localeCompare(b.company) || a.person.localeCompare(b.person));
 
   const columns: Column<P11dRow>[] = [
-    { key: "person", header: "Employee", render: (r) => <strong>{r.person || "—"}</strong> },
-    { key: "company", header: "Company" },
+    { key: "person", header: "Employee", sortable: true, render: (r) => <strong>{r.person || "—"}</strong> },
+    { key: "company", header: "Company", sortable: true },
     { key: "benefit", header: "Benefit" },
     {
-      key: "value", header: "P11D value", numeric: true,
+      key: "value", header: "P11D value", numeric: true, sortable: true,
       render: (r) => (r.value !== null ? <Money amount={r.value} /> : <span style={{ color: "var(--text-subtle)" }}>—</span>),
     },
     {
-      key: "class1aNI", header: "Class 1A NI", numeric: true,
+      key: "class1aNI", header: "Class 1A NI", numeric: true, sortable: true,
       render: (r) => (r.class1aNI !== null ? <Money amount={r.class1aNI} /> : <span style={{ color: "var(--text-subtle)" }}>—</span>),
     },
     {
-      key: "status", header: "Status",
+      key: "status", header: "Status", sortable: true,
       render: (r) => <Badge tone={P11D_TONES[r.status] ?? "neutral"}>{r.status || "—"}</Badge>,
     },
-    { key: "dateFiled", header: "Filed", render: (r) => fmtDate(r.dateFiled) },
-    { key: "manager", header: "Manager" },
+    { key: "dateFiled", header: "Filed", sortable: true, render: (r) => fmtDate(r.dateFiled) },
+    { key: "manager", header: "Manager", sortable: true },
   ];
 
   return (

@@ -29,25 +29,26 @@ export function AccountsJobs({ openClient }: Props) {
 
   const columns: Column<AccountsJob>[] = [
     {
-      key: "client", header: "Client",
+      key: "client", header: "Client", sortable: true,
       render: (r) => (
         <button type="button" className="link-btn" disabled={!r.clientId} onClick={() => openClient(r.clientId)}>
           {r.client}
         </button>
       ),
     },
-    { key: "yearEnd", header: "Year end", render: (r) => fmtDate(r.yearEnd) },
-    { key: "deadline", header: "Deadline", render: (r) => fmtDate(r.deadline) },
+    { key: "yearEnd", header: "Year end", sortable: true, render: (r) => fmtDate(r.yearEnd) },
+    { key: "deadline", header: "Deadline", sortable: true, render: (r) => fmtDate(r.deadline) },
     {
       key: "filedDate", header: "Time left",
+      sortable: true, sortValue: (r) => (r.stage === "Filed" ? null : daysUntil(r.deadline)),
       render: (r) =>
         r.stage === "Filed"
           ? <span style={{ color: "var(--text-subtle)", fontSize: "0.82rem" }}>filed {fmtDate(r.filedDate)}</span>
           : (() => { const d = daysUntil(r.deadline); return <Badge tone={deadlineTone(d)}>{deadlineLabel(d)}</Badge>; })(),
     },
-    { key: "stage", header: "Stage", render: (r) => <Badge tone={stageTone(r.stage)}>{r.stage}</Badge> },
-    { key: "manager", header: "Manager" },
-    { key: "partner", header: "Partner" },
+    { key: "stage", header: "Stage", sortable: true, render: (r) => <Badge tone={stageTone(r.stage)}>{r.stage}</Badge> },
+    { key: "manager", header: "Manager", sortable: true },
+    { key: "partner", header: "Partner", sortable: true },
     {
       key: "notes", header: "Latest note",
       render: (r) =>

@@ -29,21 +29,21 @@ export function PersonalTax({ openClient }: Props) {
 
   const columns: Column<PersonalTaxJob>[] = [
     {
-      key: "client", header: "Client",
+      key: "client", header: "Client", sortable: true,
       render: (r) => (
         <button type="button" className="link-btn" disabled={!r.clientId} onClick={() => openClient(r.clientId)}>
           {r.client}
         </button>
       ),
     },
-    { key: "company", header: "Linked company", render: (r) => r.company || <span style={{ color: "var(--text-subtle)" }}>—</span> },
-    { key: "owner", header: "Owner" },
-    { key: "status", header: "Status", render: (r) => <Badge tone={ptTone(r.status)}>{r.status}</Badge> },
+    { key: "company", header: "Linked company", sortable: true, render: (r) => r.company || <span style={{ color: "var(--text-subtle)" }}>—</span> },
+    { key: "owner", header: "Owner", sortable: true },
+    { key: "status", header: "Status", sortable: true, render: (r) => <Badge tone={ptTone(r.status)}>{r.status}</Badge> },
     {
       key: "invoice", header: "Invoice",
       render: (r) => (r.invoice ? <Tag>To invoice</Tag> : <span style={{ color: "var(--text-subtle)" }}>—</span>),
     },
-    { key: "filedDate", header: "Filed", render: (r) => fmtDate(r.filedDate) },
+    { key: "filedDate", header: "Filed", sortable: true, render: (r) => fmtDate(r.filedDate) },
     {
       key: "notes", header: "Latest note",
       render: (r) =>
